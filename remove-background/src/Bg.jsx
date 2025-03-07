@@ -5,7 +5,7 @@ import banner from './assets/banner.png'
 import logo from './assets/logo.png'
 
 function Bg() {
-    const [count, setCount] = useState(0)
+    const [tab, settab] = useState(1)
 
     return (
         <div className='Bg_const'>
@@ -18,8 +18,20 @@ function Bg() {
 <div className="middle_div_cont">
     <div className="left_div_cont">
 
+        <div className="left_div_cont_inner">
+
+        </div>
+
     </div>
     <div className="right_div">
+        <div className="tabs_cont">
+
+        <div className={"tab_no_bg"+ (tab==1? 'tab_selected' : '') }onClick={()=>settab(1)}>הוסר רקע</div>
+        <div className={"tab_original tab_selected" + (tab==2? 'tab_selected': '')} onClick={()=>settab(2)}>מקורי</div>
+        </div>
+        <div className="right_div_cont_inner">
+
+        </div>
 
     </div>
 </div>
