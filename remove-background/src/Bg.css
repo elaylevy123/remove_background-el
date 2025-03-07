@@ -1,0 +1,18 @@
+.Bg_const{
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 180px;
+    border-radius: 20px;
+    background-color: #222A34;
+}
+.close_img {
+    margin-top: 15px;
+    margin-left:15px;
+}
+.Bg_title {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 60px;
+}
