@@ -90,30 +90,33 @@ font-size: 13px;
     background-color: #161B21;
     width: 100%;
     height: 77%;
-    margin-top: 63px;
+    margin-top:63px;
 }
+
 .tabs_cont{
     position: absolute;
     color: white;
-    family: Aduma;
-    display:flex;
+    font-family: 'Aduma';
+    display: flex;
     flex-direction: row-reverse;
     left: 490px;
     top: 23px;
-    font-size:21px;
+    font-size: 21px;
 }
-.tab_no_bg{
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-}
-.tab_original{
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-}
-.tab_selected{
-    border-bottom: 3px solid #9c27B0;
-    height: 37px;
 
+.tab_no_bg{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_original{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_selected{
+    border-bottom: 3px solid #9C27B0;
+    height: 37px;
 }
