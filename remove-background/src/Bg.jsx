@@ -4,6 +4,7 @@ import './Bg.css'
 import banner from './assets/banner.png'
 import logo from './assets/logo.png'
 import DownloadImg from './DownloadImg'
+import Tab from './Tab'
 
 function Bg() {
     const [tab, settab] = useState(1)
@@ -35,7 +36,14 @@ function Bg() {
             <div className={'tab_original ' + (tab == 2 ? 'tab_selected' : '')} onClick={() => settab(2)}>מקורי</div>
         </div>
         <div className="right_div_cont_inner">
+            {tab == 1 ?<Tab tab = "no_bg"/>:
+            <Tab tab = "original"/>}
 
+        </div>
+        <div>
+            <div className="eula_cont">
+            <div className="eula_text">על ידי העלאת תמונה אתה מסכים לתנאים ולהגבלות</div>
+            <button className="eula_img_btn">העלאת תמונה</button>
         </div>
 
     </div>
@@ -44,6 +52,7 @@ function Bg() {
                 <img src={banner}/>
                 <img src={logo} className="log"/>
             </div>
+        </div>
         </div>
     )
 }
