@@ -1,4 +1,4 @@
-.Bg_const{
+.bg_cont{
     width: 1000px;
     height: 700px;
     margin: 0 auto;
@@ -7,45 +7,53 @@
     background-color: #222A34;
     position: relative;
 }
-.close_img {
+
+.close_img{
     margin-top: 15px;
-    margin-left:15px;
+    margin-left: 15px;
 }
-.Bg_title {
+
+.bg_title{
     color: white;
     font-size: 45px;
     text-align: right;
-    margin-right: 40px;
+    margin-right: 20px;
     font-family: Aduma;
     font-weight: 200;
     margin-top: -20px;
 }
-.upload_img_btn {
-    background-color: #475366;
-    border: 0;
-    color: #ffffff87;
-    border-radius: 15px;
-    width: 120px;
-    height: 30px;
+
+.upload_img_btn{
+
     background-image: url(./assets/Upload.png);
     background-repeat: no-repeat;
     background-position: 10px;
+
+    background-color: #475366;
+    border: 0;
+    color: #ffffff87;
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
     text-align: right;
     padding-right: 13px;
     position: absolute;
     top: 60px;
     left: 15px;
+    cursor: pointer;
 }
-.upload_img_text {
-color: #ffffffa3;
-direction: rtl;
-width: 156px;
-position: absolute;
-top: 67px;
-left:146px;
-font-family: sans-serif;
-font-size: 13px;
+
+.upload_img_text{
+    color: #ffffffa3;
+    direction: rtl;
+    width: 156px;
+    position: absolute;
+    top: 67px;
+    left: 146px;
+    font-family: sans-serif;
+    font-size: 13px;
 }
+
 .middle_div_cont{
     width: 100%;
     height: 74%;
@@ -55,6 +63,7 @@ font-size: 13px;
     position: relative;
     top: 15px;
 }
+
 .left_div_cont{
     width: 29%;
     height: 100%;
@@ -62,30 +71,35 @@ font-size: 13px;
     margin-right: 1%;
     border-radius: 8px;
 }
-.right_div{
+
+.right_div_cont{
     width: 68%;
     height: 100%;
     background-color: #2F3A4B;
     border-radius: 8px;
 }
+
 .footer_cont{
     display: flex;
     flex-direction: row-reverse;
-    margin-top:31px;
+    margin-top: 31px;
     justify-content: space-around;
     height: 50px;
     gap: 29px;
 }
-.logo {
+
+.logo{
     height: 37px;
     margin-top: 6px;
 }
+
 .left_div_cont_inner{
     background-color: #161B21;
     width: 100%;
     height: 77%;
-    margin-top: 63px;
+    margin-top:63px;
 }
+
 .right_div_cont_inner{
     background-color: #161B21;
     width: 100%;
@@ -119,4 +133,192 @@ font-size: 13px;
 .tab_selected{
     border-bottom: 3px solid #9C27B0;
     height: 37px;
+}
+
+.eula_cont{
+    position: absolute;
+}
+
+.eula_img_btn{
+    background-image: url(./assets/eula.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    background-color: #475366;
+    border: 0;
+    color: #ffffff87;
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    text-align: right;
+    padding-right: 13px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.eula_text{
+    color: white;
+    text-align: right;
+    width: 666px;
+    right: -7px;
+    margin-top: 18px;
+    color: #ffffff70;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.eula_popup{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: right;
+    padding: 20px;
+}
+
+.layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad;
+}
+
+.close_popup_img{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+}
+
+.download_popup{
+    width: 670px;
+    height: 329px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 98%);
+    text-align: right;
+    padding: 20px;
+}
+
+.download_popup_top_div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 43%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #9c27b059;
+    border-radius: 7px;
+    background-image: url(./assets/Downloads_Folder.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 13px;
+}
+
+.download_popup_title{
+    font-family: 'Aduma';
+    font-size: 50px;
+    text-align: center;
+    margin-top: 35px;
+    color: #001d68;
+}
+
+.download_popup_subtitle{
+    color: #001d68;
+    font-family: sans-serif;
+    direction: rtl;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.not_robot_cont{
+    color: #001d68;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-right: 90px;
+    margin-top: 36px;
+}
+
+.checkbox_cont{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2px;
+}
+
+.not_robot_icon{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+
+.cancel_btn{
+    font-family: 'Aduma';
+    font-size: 23px;
+    width: 133px;
+    border: 1px solid #001d68;
+    text-align: center;
+    color: #001d68;
+    height: 45px;
+    border-radius: 50px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.approve_btn{
+    font-family: 'Aduma';
+    font-size: 23px;
+    width: 220px;
+    text-align: center;
+    color: #001d68;
+    height: 45px;
+    border-radius: 50px;
+    line-height: 45px;
+    color: white;
+    background: linear-gradient(89deg, #9C27B0, #03A9F4);
+    cursor: pointer;
+}
+
+.btn_cont{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+
+.file_upload_input{
+    display: none;
+}
+
+.err_msg{
+    position: absolute;
+    color: red;
+    margin-left: 41px;
+    margin-top: -1px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.msg_download{
+    color: red;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 23px;
 }
