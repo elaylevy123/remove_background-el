@@ -7,6 +7,7 @@ import DownloadImg from './DownloadImg'
 import Tab from './Tab'
 import close_img_black from './assets/close1.png'
 import not_robot from './assets/not_robot.png'
+import axios from 'axios'
 
 function Bg() {
 
@@ -84,7 +85,6 @@ function Bg() {
                         a.click();
                     });
                 });
-
         } else {
             seterr_msg_download('יש לסמן אני לא רובוט');
         }
