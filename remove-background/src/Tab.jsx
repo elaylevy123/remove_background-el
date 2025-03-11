@@ -50,6 +50,13 @@ function Tab(props) {
             </div> : <></>}
 
 
+            {props.file_name && props.tab=='no_bg'?
+                <img src={'http://localhost:5000/no_bg_'+props.file_name} className='img_1'/> : <></>}
+
+
+            {props.file_name && props.tab!='no_bg'?
+                <img src={'http://localhost:5000/'+props.file_name} className='img_1'/> : <></>}
+
 
             {!props.file_name && props.show_loader ?<div className='loader_cont'>
                 <div className='loader_cont_in' style={{width:loader_p+'%'}}>
