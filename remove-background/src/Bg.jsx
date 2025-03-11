@@ -85,6 +85,7 @@ function Bg() {
                         a.click();
                     });
                 });
+
         } else {
             seterr_msg_download('יש לסמן אני לא רובוט');
         }
